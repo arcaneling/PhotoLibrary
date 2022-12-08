@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+   <children>
+      <Text layoutX="388.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="374.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please login">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Button layoutX="395.0" layoutY="522.0" mnemonicParsing="false" onAction="#attemptLogin" prefHeight="23.0" prefWidth="106.0" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username" alignment="CENTER" layoutX="334.0" layoutY="480.0" onAction="#attemptLogin" prefHeight="30.0" prefWidth="227.0" promptText="Enter Username">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <ImageView fitHeight="318.0" fitWidth="530.0" layoutX="195.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../data/stock1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
